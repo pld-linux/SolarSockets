@@ -2,9 +2,9 @@
 %define	_gccver_ix86	3.3.3
 %define	_gccver_x86_64	3.4.2
 %ifarch %{ix86}
-%define	_gccver	_gccver_ix86
+%define	_gccver	%{_gccver_ix86}
 %else
-%define	_gccver	_gccver_x86_64
+%define	_gccver	%{_gccver_x86_64}
 %endif
 Summary:	Easy network socket library
 Name:		SolarSockets
