@@ -1,15 +1,21 @@
 #
-%define	_gccver_ix86	3.4.2
+%define	_gccver_ix86	3.3.3
 %define	_gccver_x86_64	3.4.2
+%ifarch %{ix86}
+%define	_gccver	_gccver_ix86
+%else
+%define	_gccver	_gccver_x86_64
+%endif
 Summary:	Easy network socket library
 Name:		SolarSockets
 Version:	0.4.0
-Release:	0.1
+%define	_rel	0.1
+Release:	%{_rel}@%{_gccver}
 License:	Free for non comercial use
 Vendor:		Solar-OpenSource.Com
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/solarirc/%{name}-%{version}-GCC%{_gccver_ix86}.i386.tgz
-# NoSource0-md5:	b037bd7e00a788524c3669a44f3f807f
+# NoSource0-md5:	45190052e0d0cafc9cf71016b4ea064d
 Source1:	http://dl.sourceforge.net/solarirc/%{name}-%{version}-GCC%{_gccver_x86_64}.x86_64.tgz
 # NoSource1-md5:	aea57a8abb555dc6ef11f843e677debb
 URL:		http://solarirc.sourceforge.net/solarsockets/
