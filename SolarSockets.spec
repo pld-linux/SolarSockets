@@ -6,7 +6,7 @@
 %define	_gccver	%{_gccver_x86_64}
 %endif
 Summary:	Easy network socket library
-Summary(pl.UTF-8):   Łatwa w użyciu biblioteka do gniazd
+Summary(pl.UTF-8):	Łatwa w użyciu biblioteka do gniazd
 Name:		SolarSockets
 Version:	0.4.0
 %define	_rel	0.1
@@ -38,7 +38,7 @@ OpenSource w celu uzyskania statystyk użycia.
 
 %package devel
 Summary:	Developement files for SolarSockets library
-Summary(pl.UTF-8):   Pliki programistyczne biblioteki SolarSockets
+Summary(pl.UTF-8):	Pliki programistyczne biblioteki SolarSockets
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -50,7 +50,7 @@ Pliki programistyczne biblioteki SolarSockets.
 
 %package static
 Summary:	Static SolarSockets library
-Summary(pl.UTF-8):   Statyczna biblioteka SolarSockets
+Summary(pl.UTF-8):	Statyczna biblioteka SolarSockets
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
